@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<include file="struts-default.xml"></include>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResource" />
+	<constant name="struts.ui.theme" value="scholar" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<package name="default" namespace="/" extends="struts-default,json-default">
+	
+<!-- 		<interceptors>
+		 <interceptor name="requestVerifier" class="in.scholarreport.struts2.interceptors.RequestInterceptor"/>
+		 
+		 <interceptor-stack name="secureStack">
+		<interceptor-ref name="requestVerifier"/>
+		<interceptor-ref name="defaultStack"/>
+		</interceptor-stack>
+		  
+		</interceptors>
+		
+		<default-interceptor-ref name="secureStack"/> -->
+		
+		<action name="hello" class="helloBean">
+			<result name="success">jsp/success.jsp</result>
+		</action>
+		
+		<action name="register" class="in.scholarreport.struts2.actions.PopulateRegisterScholarAction">
+			<result name="success">jsp/scholar/signUp.jsp</result>
+			<result name="input">jsp/scholar/signUp.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+						
+		<action name="registersupervisor" class="in.scholarreport.struts2.actions.PopulateRegisterSupervisorAction">
+			<result name="success">jsp/admin/registerSupervisor.jsp</result>
+			<result name="input">jsp/admin/registerSupervisor.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<!-- Admin related actions starts -->
+		
+		<action name="addinstitute">
+			<result name="success">jsp/admin/addInstitute.jsp</result>
+			<result name="input">jsp/admin/addInstitute.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="addfaculty" class="in.scholarreport.struts2.actions.AddFacultyAction">
+			<result name="success">jsp/admin/addFaculty.jsp</result>
+			<result name="input">jsp/admin/addFaculty.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="adddepartment" class="in.scholarreport.struts2.actions.AddDepartmentAction">
+			<result name="success">jsp/admin/addDepartment.jsp</result>
+			<result name="input">jsp/admin/addDepartment.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="newcolloquium">
+			<result name="success">jsp/admin/newColloquium.jsp</result>
+			<result name="input">jsp/admin/newColloquium.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="addinstitutesubmit" class="in.scholarreport.struts2.actions.SubmitInstituteAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/admin/addFaculty.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="addfacultysubmit" class="in.scholarreport.struts2.actions.SubmitFacultyAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/admin/addFaculty.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="adddepartmentsubmit" class="in.scholarreport.struts2.actions.SubmitDepartmentAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/admin/addDepartment.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="newcolloquiumsubmit" class="in.scholarreport.struts2.actions.SubmitColloquiumAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/admin/newColloquium.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+
+		
+		<action name="admindepartment"  class="in.scholarreport.struts2.actions.DepartmentAdminAction">
+			<result name="success">jsp/admin/admindepartment.jsp</result>
+			<result name="input">jsp/admin/admindepartment.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="adminfaculty" class="in.scholarreport.struts2.actions.FacultyAdminAction">
+			<result name="success">jsp/admin/adminfaculty.jsp</result>
+			<result name="input">jsp/admin/adminfaculty.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="admininstitute" class="in.scholarreport.struts2.actions.InstituteAdminAction">
+			<result name="success">jsp/admin/admininstitute.jsp</result>
+			<result name="input">jsp/admin/admininstitute.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="adminsupervisor" class="in.scholarreport.struts2.actions.AdminSupervisorAction">
+			<result name="success">jsp/admin/adminsupervisor.jsp</result>
+			<result name="input">jsp/admin/adminsupervisor.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="adminscholar" class="in.scholarreport.struts2.actions.AdminScholarAction">
+			<result name="success">jsp/admin/adminscholar.jsp</result>
+			<result name="input">jsp/admin/adminscholar.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+				
+		<action name="admincolloquium" class="in.scholarreport.struts2.actions.AdminColloquiumAction">
+			<result name="success">jsp/admin/adminColloquium.jsp</result>
+			<result name="input">jsp/admin/adminColloquium.jsp</result>
+			<result name="login">index.html</result>
+		</action>		
+						
+		<action name="adminothers">
+			<result name="success">jsp/admin/adminothers.jsp</result>
+			<result name="input">jsp/admin/adminothers.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<!-- Admin related actions ends -->
+		
+		<action name="login" class="in.scholarreport.struts2.actions.LoginAction">
+			<result name="input">index.html</result>
+			<result name="supervisor" type="redirectAction">/supervisor</result>
+			<result name="success">jsp/scholar/Analysis.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="switchlogin" class="in.scholarreport.struts2.actions.SwitchLoginAction">
+			<result name="success">jsp/supervisor/supervisormain.jsp</result>
+			<result name="input">index.html</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="logout" class="in.scholarreport.struts2.actions.LogoutAction">
+			<result name="input">index.html</result>
+			<result name="success">index.html</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="scholarmonthlyreports" class="in.scholarreport.struts2.actions.ScholarMonthlyReportAction">
+			<result name="input">jsp/scholar/myMonthlyReports.jsp</result>
+			<result name="success">jsp/scholar/myMonthlyReports.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="scholarquarterlyreports" class="in.scholarreport.struts2.actions.ScholarQuarterlyReportAction">
+			<result name="input">jsp/scholar/myQuarterlyReports.jsp</result>
+			<result name="success">jsp/scholar/myQuarterlyReports.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="registerSubmit" class="in.scholarreport.struts2.actions.SignUpAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/SignUp.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="registerSupervisorSubmit" class="in.scholarreport.struts2.actions.RegisterSupervisorAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/admin/registerSupervisor.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		
+		
+		<action name="submitMonthly" class="in.scholarreport.struts2.actions.SubmitMonthlyAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/Analysis.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="submitQuarterly" class="in.scholarreport.struts2.actions.SubmitQuarterlyAction">
+			<result name="success">jsp/success.jsp</result>
+			<result name="input">jsp/Analysis.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+
+		<action name="supervisor">
+			<result name="success">jsp/supervisor/supervisormain.jsp</result>
+			<result name="input">index.html</result>
+			<result name="login">index.html</result>
+		</action>
+		
+		<action name="supervisormonthlyreport" class="in.scholarreport.struts2.actions.SupervisorMonthlyReportAction">
+			<result name="success">jsp/supervisor/supervisormonthlyreport.jsp</result>
+			<result name="input">index.html</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="supervisorquarterlyreport" class="in.scholarreport.struts2.actions.SupervisorQuarterlyReportAction">
+			<result name="success">jsp/supervisor/supervisorquarterlyreport.jsp</result>
+			<result name="input">index.html</result>
+			<result name="login">index.html</result>
+		</action>
+		<action name="invoke" class="in.scholarreport.struts2.actions.InvokeAction">
+			<result name="success" type="stream">
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">2048</param>
+			</result>
+		</action>
+		<action name="viewreport" class="in.scholarreport.struts2.actions.ViewReportAction">
+			<result name="success">jsp/reportview.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+		<action class="in.scholarreport.struts2.actions.ColloquiumJSONAction" name="collScholar">
+                <result type="json">
+            </result></action>
+        <action name="reportcontroller" class="in.scholarreport.struts2.actions.SearchCriteriaAction">
+                <result name="success">jsp/admin/reportcontroller.jsp</result>
+        </action>
+        <action name="searchreports" class="in.scholarreport.struts2.actions.SearchReportAction">
+                <result name="success">jsp/admin/searchresult.jsp</result>
+        </action>
+        
+        <action name="viewhandler"  class="in.scholarreport.struts2.actions.ViewHandler">
+			<result name="colloquium">jsp/admin/viewcolloquium.jsp</result>
+			<result name="institute">jsp/admin/viewinstitute.jsp</result>
+			<result name="faculty">jsp/admin/viewfaculty.jsp</result>
+			<result name="department">jsp/admin/viewdepartment.jsp</result>
+			<result name="scholar">jsp/admin/viewscholar.jsp</result>
+			<result name="supervisor">jsp/admin/viewsupervisor.jsp</result>
+			<result name="input">jsp/admin/admindepartment.jsp</result>
+			<result name="login">index.html</result>
+		</action>
+
+	<action name="updateinstitutesubmit"
+		class="in.scholarreport.struts2.actions.UpdateInstituteAction">
+		<result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+	</action>
+        
+        <action name="updatefacultysubmit" class="in.scholarreport.struts2.actions.UpdateFacultyAction">
+         <result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+        </action>
+        
+        <action name="updatedepartmentsubmit" class="in.scholarreport.struts2.actions.UpdateDepartmentAction">
+        <result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+        </action>
+
+	<action name="updatesupervisorsubmit"
+		class="in.scholarreport.struts2.actions.UpdateSupervisorAction">
+		<result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+	</action>
+
+	<action name="updatescholarsubmit"
+		class="in.scholarreport.struts2.actions.UpdateScholarAction">
+		<result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+	</action>
+
+	<action name="updatecolloquiumsubmit"
+		class="in.scholarreport.struts2.actions.UpdateColloquiumAction">
+		<result name="success" type="httpheader">
+			<param name="status">200</param>
+			<param name="successMessage">Updated successfully</param>
+		</result>
+		<result name="error" type="httpheader">
+			<param name="status">500</param>
+			<param name="errorMessage">Update Failed</param>
+		</result>
+	</action>
+	</package>
+
+
+
+	<!-- Add packages here -->
+
+</struts>

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+ <HEAD>
+  <TITLE> Scholar Report </TITLE>
+  <script src="jqueryui/js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+function showPanel(){
+	$(".centerPanel").show();
+	}
+	function closePanel(){
+	$(".loginForm").hide();
+	$(".centerPanel").hide();
+	}
+
+	function showLoginForm(){
+		showPanel();
+	$(".loginForm").show();
+	}
+</script>
+  <style>
+  *{
+border-width:0px
+}
+
+body{
+height : 100%;
+margin : 0px;
+  padding : 0px;
+  border-width : 0px;
+}
+#full-screen {
+	z-index: -999;
+	min-height: 77%;
+	min-width: 1024px;
+	width: 100%;
+	position: fixed;
+	top: 18%;
+	left: 0;
+}
+  #header{
+  position : fixed;
+  margin : 0px;
+  padding : 0px;
+  border-width : 0px;
+  background-color : #F0F0F0;
+  width : 100%;
+  height : 18%;
+  top : 0px
+  }
+  #footer{
+  position : fixed;
+  margin : 0px;
+  padding : 0px;
+  border-width : 0px;
+  background-color : #F8F8F8;
+  width : 100%;
+  height : 5%;
+  bottom : 0px;
+  }
+  .left{
+  float:left;
+  }
+  .right{
+  float:right;
+  height : 100%;
+  width : 12%;
+  margin-left:10px;
+  position : relative;
+  top : 30%;
+  }
+  .centerPanel{
+  margin : 0px;
+  padding : 0px;
+  border-width : 0px;
+  border-radius : 4px;
+  position : fixed;
+  top : 30%;
+  left : 35%;
+  height : 40%;
+  width : 30%;
+  background-color : #3399FF;
+  opacity : 0.8;
+  display : none;
+  }
+
+    .loginForm {
+    background: linear-gradient(top, #fff, #f8f8f8);
+    border: 1px solid #d0d2d5;
+    margin: 0 0 2% 0;
+    padding: 0%;
+    width: 60%;
+    height : 70%;
+    position : relative;
+    top : 10%;
+    left : 20%;
+    font-family: 'Trebuchet MS' ,'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	display : none;
+    }
+
+	.loginForm input {
+    background: #fff;
+    border: 3px solid #c6c9cc;
+    border-radius: 15px;
+    font-family : 'Trebuchet MS','Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    margin: 0 0 15px 0;
+    padding: 3px;
+    width: 70%;
+	text-align : center;
+    position : relative;
+    left:10%;
+    top:5%;
+    }
+
+	input[type=checkbox]{
+    background: #fff;
+    border: 3px solid #c6c9cc;
+    border-radius: 15px;
+    font-family : 'Trebuchet MS','Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    display:inline;
+    margin :0%;
+    padding: 0%;
+    width: 10%;
+    position : relative;
+    top:5%;
+    }
+
+	label {
+    position : relative;
+	margin: 0px;
+    padding: 3px;
+    width: 70%;
+	left:30%
+	}
+
+	input[type=submit]{
+	position : relative;
+	width : 50%;	
+    left:25%;
+    background: grey;
+    border: 5px solid #c6c9cc;
+    border-radius: 8px;
+	font-family: 'Trebuchet MS' ,'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	}
+	.topRightTouch{
+	position : relative;
+	left : 90%
+	}
+
+	input[type=radio] {
+    display:none;
+    margin:10px;
+}
+input[type=radio] + label {
+    border: 2px solid #c6c9cc;
+    border-radius: 10px;
+    display:inline;
+    font-size: small;
+    margin :2%;
+    padding: 1%;
+    width :40%;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+	position : relative;
+    left:23%;
+}
+input[type=radio]:checked + label {
+   background-image: none;
+   border-width : 1%;
+    background-color:#383838;
+}
+  </style>
+ </HEAD>
+
+ <BODY>
+ 
+ <div id="header">
+
+ <div class="left">
+ <a target="_blank" href="#"><img title="Logo" alt="LOGO" style="float:left" height="128px" width="128px" src="images/report.png"/></a>
+ </div>
+ 
+  <div class="right">
+ <a target="_blank" href="#"><img class="bottomtouch" src="images/registration-guidelines-button.jpg"/></a>
+ </div>
+
+ <div class="right">
+ <a target="" href="http://localhost:8080/PHDWebApp/register" onclick=""><img class="bottomtouch" src="images/registration-button.jpg"/></a>
+ </div>
+
+  <div class="right">
+  <a target="" href="#" onclick="showLoginForm()"><img class="bottomtouch" src="images/login-button.jpg"/></a>
+  </div>
+  </div>
+  <div class="centerPanel">
+  <a href="#" onclick="closePanel()"><img class="topRightTouch" height="10%" width="10%" src="images/close.png"/></a>
+<form  class="loginForm" accept-charset="UTF-8" action="login" class="new_user_session" id="new_user_session" method="post">
+
+	  <div>
+	    <label for="user_session_login">Email ID</label><br>
+	    <input id="user_session_login" name="id" size="30" type="text">
+	  </div>
+	  <div>
+	    <label for="user_session_password">Password</label><br>
+	    <input id="user_session_password" name="password" size="30" type="password">
+	  </div>
+	  <div>
+		<input type="radio" id="radio1" name="identity" value="scholar" checked>
+		<label for="radio1">Scholar</label>
+		<input type="radio" id="radio2" name="identity" value="supervisor">
+		<label for="radio2">Supervisor</label><br>
+	  </div>
+		<div >
+	    <input type="hidden" value="0"><input checked="checked" id="user_session_remember_me" name="user_session[remember_me]" type="checkbox" value="1"> <label for="user_session_remember_me">Keep me logged in</label>
+	  </div>
+	  <div>
+	    <input class="button" type="submit" value="Login">
+	  </div>
+</form>
+
+  </div>
+  <img id="full-screen" src="images/body-background.jpg"/>
+   <div id="footer">
+   </div>
+ </BODY>
+</HTML>

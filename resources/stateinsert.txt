@@ -1,0 +1,813 @@
+insert into states ( stateid, statename ) values	(	1,	'Andaman and Nicobar Islands'	);
+insert into states ( stateid, statename ) values	(	2,	'Andhra Pradesh'	);
+insert into states ( stateid, statename ) values	(	3,	'Arunachal Pradesh'	);
+insert into states ( stateid, statename ) values	(	4,	'Assam'	);
+insert into states ( stateid, statename ) values	(	5,	'Bihar'	);
+insert into states ( stateid, statename ) values	(	6,	'Chandigarh'	);
+insert into states ( stateid, statename ) values	(	7,	'Chhattisgarh'	);
+insert into states ( stateid, statename ) values	(	8,	'Dadar and Nagar Haveli'	);
+insert into states ( stateid, statename ) values	(	9,	'Daman and Diu'	);
+insert into states ( stateid, statename ) values	(	10,	'Delhi' 	);
+insert into states ( stateid, statename ) values	(	11,	'Goa'	);
+insert into states ( stateid, statename ) values	(	12,	'Gujarat'	);
+insert into states ( stateid, statename ) values	(	13,	'Haryana'	);
+insert into states ( stateid, statename ) values	(	14,	'Himachal Pradesh'	);
+insert into states ( stateid, statename ) values	(	15,	'Jammu and Kashmir'	);
+insert into states ( stateid, statename ) values	(	16,	'Jharkhand'	);
+insert into states ( stateid, statename ) values	(	17,	'Karnataka'	);
+insert into states ( stateid, statename ) values	(	18,	'Kerala'	);
+insert into states ( stateid, statename ) values	(	19,	'Lakshadeep'	);
+insert into states ( stateid, statename ) values	(	20,	'Madya Pradesh'	);
+insert into states ( stateid, statename ) values	(	21,	'Maharashtra'	);
+insert into states ( stateid, statename ) values	(	22,	'Manipur'	);
+insert into states ( stateid, statename ) values	(	23,	'Meghalaya'	);
+insert into states ( stateid, statename ) values	(	24,	'Mizoram'	);
+insert into states ( stateid, statename ) values	(	25,	'Nagaland'	);
+insert into states ( stateid, statename ) values	(	26,	'Orissa'	);
+insert into states ( stateid, statename ) values	(	27,	'Pondicherry'	);
+insert into states ( stateid, statename ) values	(	28,	'Punjab'	);
+insert into states ( stateid, statename ) values	(	29,	'Rajasthan'	);
+insert into states ( stateid, statename ) values	(	30,	'Sikkim'	);
+insert into states ( stateid, statename ) values	(	31,	'Tamil Nadu'	);
+insert into states ( stateid, statename ) values	(	32,	'Tripura'	);
+insert into states ( stateid, statename ) values	(	33,	'Uttar Pradesh'	);
+insert into states ( stateid, statename ) values	(	34,	'Uttaranchal'	);
+insert into states ( stateid, statename ) values	(	35,	'West Bengal'	);
+
+
+
+insert into districts (districtname,stateid ) values ( 'North and Middle Andaman',1);
+insert into districts (districtname,stateid ) values ( 'South Andaman',1); 		
+insert into districts (districtname,stateid ) values ( 'Nicobar',1);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Adilabad',2); 	
+insert into districts (districtname,stateid ) values ( 'Anantapur',2); 	
+insert into districts (districtname,stateid ) values ( 'Chittoor',2); 	
+insert into districts (districtname,stateid ) values ( 'East Godavari',2); 	
+insert into districts (districtname,stateid ) values ( 'Guntur',2); 		
+insert into districts (districtname,stateid ) values ( 'Hyderabad',2); 	
+insert into districts (districtname,stateid ) values ( 'Karimnagar',2); 	
+insert into districts (districtname,stateid ) values ( 'Khammam',2); 	
+insert into districts (districtname,stateid ) values ( 'Krishna',2); 	
+insert into districts (districtname,stateid ) values ( 'Kurnool',2); 	
+insert into districts (districtname,stateid ) values ( 'Mahbubnagar',2); 	
+insert into districts (districtname,stateid ) values ( 'Medak',2); 		
+insert into districts (districtname,stateid ) values ( 'Nalgonda',2); 	
+insert into districts (districtname,stateid ) values ( 'Nizamabad',2); 	
+insert into districts (districtname,stateid ) values ( 'Prakasam',2); 	
+insert into districts (districtname,stateid ) values ( 'Ranga Reddy',2); 	
+insert into districts (districtname,stateid ) values ( 'Srikakulam',2); 	
+insert into districts (districtname,stateid ) values ( 'Sri Potti Sri Ramulu Nellore',2);
+insert into districts (districtname,stateid ) values ( 'Vishakhapatnam',2); 	
+insert into districts (districtname,stateid ) values ( 'Vizianagaram',2); 	
+insert into districts (districtname,stateid ) values ( 'Warangal',2); 	
+insert into districts (districtname,stateid ) values ( 'West Godavari',2); 	
+insert into districts (districtname,stateid ) values ( 'Cudappah',2);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Anjaw',3); 		
+insert into districts (districtname,stateid ) values ( 'Changlang',3); 	
+insert into districts (districtname,stateid ) values ( 'East Siang',3); 	
+insert into districts (districtname,stateid ) values ( 'East Kameng',3); 	
+insert into districts (districtname,stateid ) values ( 'Kurung Kumey',3); 	
+insert into districts (districtname,stateid ) values ( 'Lohit',3); 		
+insert into districts (districtname,stateid ) values ( 'Lower Dibang Valley',3);
+insert into districts (districtname,stateid ) values ( 'Lower Subansiri',3); 
+insert into districts (districtname,stateid ) values ( 'Papum Pare',3); 	
+insert into districts (districtname,stateid ) values ( 'Tawang',3); 		
+insert into districts (districtname,stateid ) values ( 'Tirap',3); 		
+insert into districts (districtname,stateid ) values ( 'Dibang Valley',3); 	
+insert into districts (districtname,stateid ) values ( 'Upper Siang',3); 	
+insert into districts (districtname,stateid ) values ( 'Upper Subansiri',3); 
+insert into districts (districtname,stateid ) values ( 'West Kameng',3); 	
+insert into districts (districtname,stateid ) values ( 'West Siang',3);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Baksa',4); 		
+insert into districts (districtname,stateid ) values ( 'Barpeta',4); 	
+insert into districts (districtname,stateid ) values ( 'Bongaigaon',4); 	
+insert into districts (districtname,stateid ) values ( 'Cachar',4); 		
+insert into districts (districtname,stateid ) values ( 'Chirang',4); 	
+insert into districts (districtname,stateid ) values ( 'Darrang',4); 	
+insert into districts (districtname,stateid ) values ( 'Dhemaji',4); 	
+insert into districts (districtname,stateid ) values ( 'Dima Hasao',4); 	
+insert into districts (districtname,stateid ) values ( 'Dhubri',4); 		
+insert into districts (districtname,stateid ) values ( 'Dibrugarh',4); 	
+insert into districts (districtname,stateid ) values ( 'Goalpara',4); 	
+insert into districts (districtname,stateid ) values ( 'Golaghat',4); 	
+insert into districts (districtname,stateid ) values ( 'Hailakandi',4); 	
+insert into districts (districtname,stateid ) values ( 'Jorhat',4); 		
+insert into districts (districtname,stateid ) values ( 'Kamrup',4); 		
+insert into districts (districtname,stateid ) values ( 'Kamrup Metropolitan',4);
+insert into districts (districtname,stateid ) values ( 'Karbi Anglong',4); 	
+insert into districts (districtname,stateid ) values ( 'Karimganj',4); 	
+insert into districts (districtname,stateid ) values ( 'Kokrajhar',4); 	
+insert into districts (districtname,stateid ) values ( 'Lakhimpur',4); 	
+insert into districts (districtname,stateid ) values ( 'Morigaon',4); 	
+insert into districts (districtname,stateid ) values ( 'Nagaon',4); 		
+insert into districts (districtname,stateid ) values ( 'Nalbari',4); 	
+insert into districts (districtname,stateid ) values ( 'Sivasagar',4); 	
+insert into districts (districtname,stateid ) values ( 'Sonitpur',4); 	
+insert into districts (districtname,stateid ) values ( 'Tinsukia',4); 	
+insert into districts (districtname,stateid ) values ( 'Udalguri',4);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Araria',5); 		
+insert into districts (districtname,stateid ) values ( 'Arwal',5); 		
+insert into districts (districtname,stateid ) values ( 'Aurangabad',5); 	
+insert into districts (districtname,stateid ) values ( 'Banka',5); 		
+insert into districts (districtname,stateid ) values ( 'Begusarai',5); 	
+insert into districts (districtname,stateid ) values ( 'Bhagalpur',5); 	
+insert into districts (districtname,stateid ) values ( 'Bhojpur',5); 	
+insert into districts (districtname,stateid ) values ( 'Buxar',5); 		
+insert into districts (districtname,stateid ) values ( 'Darbhanga',5); 	
+insert into districts (districtname,stateid ) values ( 'East Champaran',5); 	
+insert into districts (districtname,stateid ) values ( 'Gaya',5); 		
+insert into districts (districtname,stateid ) values ( 'Gopalganj',5); 	
+insert into districts (districtname,stateid ) values ( 'Jamui',5); 		
+insert into districts (districtname,stateid ) values ( 'Jehanabad',5); 	
+insert into districts (districtname,stateid ) values ( 'Kaimur',5); 		
+insert into districts (districtname,stateid ) values ( 'Katihar',5); 	
+insert into districts (districtname,stateid ) values ( 'Khagaria',5); 	
+insert into districts (districtname,stateid ) values ( 'Kishanganj',5); 	
+insert into districts (districtname,stateid ) values ( 'Lakhisarai',5); 	
+insert into districts (districtname,stateid ) values ( 'Madhepura',5); 	
+insert into districts (districtname,stateid ) values ( 'Madhubani',5); 	
+insert into districts (districtname,stateid ) values ( 'Munger',5); 		
+insert into districts (districtname,stateid ) values ( 'Muzaffarpur',5); 	
+insert into districts (districtname,stateid ) values ( 'Nalanda',5); 	
+insert into districts (districtname,stateid ) values ( 'Nawada',5); 		
+insert into districts (districtname,stateid ) values ( 'Patna',5); 		
+insert into districts (districtname,stateid ) values ( 'Purnia',5); 		
+insert into districts (districtname,stateid ) values ( 'Rohtas',5); 		
+insert into districts (districtname,stateid ) values ( 'Saharsa',5); 	
+insert into districts (districtname,stateid ) values ( 'Samastipur',5); 	
+insert into districts (districtname,stateid ) values ( 'Saran',5); 		
+insert into districts (districtname,stateid ) values ( 'Sheikhpura',5); 	
+insert into districts (districtname,stateid ) values ( 'Sheohar',5); 	
+insert into districts (districtname,stateid ) values ( 'Sitamarhi',5); 	
+insert into districts (districtname,stateid ) values ( 'Siwan',5); 		
+insert into districts (districtname,stateid ) values ( 'Supaul',5); 		
+insert into districts (districtname,stateid ) values ( 'Vaishali',5); 	
+insert into districts (districtname,stateid ) values ( 'West Champaran',5);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Chandigarh',6);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bastar',7); 		
+insert into districts (districtname,stateid ) values ( 'Bijapur',7); 	
+insert into districts (districtname,stateid ) values ( 'Bilaspur',7); 	
+insert into districts (districtname,stateid ) values ( 'Dantewada',7); 	
+insert into districts (districtname,stateid ) values ( 'Dhamtari',7); 	
+insert into districts (districtname,stateid ) values ( 'Durg',7); 		
+insert into districts (districtname,stateid ) values ( 'Jashpur',7); 	
+insert into districts (districtname,stateid ) values ( 'Janjgir-Champa',7); 
+insert into districts (districtname,stateid ) values ( 'Korba',7); 		
+insert into districts (districtname,stateid ) values ( 'Koriya',7); 		
+insert into districts (districtname,stateid ) values ( 'Kanker',7); 		
+insert into districts (districtname,stateid ) values ( 'Kabirdham',7);
+insert into districts (districtname,stateid ) values ( 'Mahasamund',7); 	
+insert into districts (districtname,stateid ) values ( 'Narayanpur',7); 	
+insert into districts (districtname,stateid ) values ( 'Raigarh',7); 	
+insert into districts (districtname,stateid ) values ( 'Rajnandgaon',7); 	
+insert into districts (districtname,stateid ) values ( 'Raipur',7); 		
+insert into districts (districtname,stateid ) values ( 'Surguja',7);        
+
+
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Dadra and Nagar Haveli',8);
+
+
+insert into districts (districtname,stateid ) values ( 'Daman',9);
+insert into districts (districtname,stateid ) values ( 'Diu',9);
+
+
+insert into districts (districtname,stateid ) values ( 'Central Delhi',10); 	
+insert into districts (districtname,stateid ) values ( 'East Delhi',10); 	
+insert into districts (districtname,stateid ) values ( 'New Delhi',10); 	
+insert into districts (districtname,stateid ) values ( 'North Delhi',10); 	
+insert into districts (districtname,stateid ) values ( 'North East Delhi',10);
+insert into districts (districtname,stateid ) values ( 'North West Delhi',10);
+insert into districts (districtname,stateid ) values ( 'South Delhi',10); 	
+insert into districts (districtname,stateid ) values ( 'South West Delhi',10);
+insert into districts (districtname,stateid ) values ( 'West Delhi',10);      
+
+
+
+insert into districts (districtname,stateid ) values ( 'North Goa',11);
+insert into districts (districtname,stateid ) values ( 'South Goa',11);
+
+insert into districts (districtname,stateid ) values ( 'Ahmedabad',12); 	
+insert into districts (districtname,stateid ) values ( 'Amreli district',12);
+insert into districts (districtname,stateid ) values ( 'Anand',12); 		
+insert into districts (districtname,stateid ) values ( 'Aravalli',12); 	
+insert into districts (districtname,stateid ) values ( 'Banaskantha',12); 	
+insert into districts (districtname,stateid ) values ( 'Bharuch',12); 	
+insert into districts (districtname,stateid ) values ( 'Bhavnagar',12); 	
+insert into districts (districtname,stateid ) values ( 'Dahod',12); 		
+insert into districts (districtname,stateid ) values ( 'Dang',12); 		
+insert into districts (districtname,stateid ) values ( 'Gandhinagar',12); 	
+insert into districts (districtname,stateid ) values ( 'Jamnagar',12); 	
+insert into districts (districtname,stateid ) values ( 'Junagadh',12); 	
+insert into districts (districtname,stateid ) values ( 'Kutch',12); 		
+insert into districts (districtname,stateid ) values ( 'Kheda',12); 		
+insert into districts (districtname,stateid ) values ( 'Mehsana',12); 	
+insert into districts (districtname,stateid ) values ( 'Narmada',12); 	
+insert into districts (districtname,stateid ) values ( 'Navsari',12); 	
+insert into districts (districtname,stateid ) values ( 'Patan',12); 		
+insert into districts (districtname,stateid ) values ( 'Panchmahal',12); 	
+insert into districts (districtname,stateid ) values ( 'Porbandar',12); 	
+insert into districts (districtname,stateid ) values ( 'Rajkot',12); 		
+insert into districts (districtname,stateid ) values ( 'Sabarkantha',12); 	
+insert into districts (districtname,stateid ) values ( 'Surendranagar',12); 	
+insert into districts (districtname,stateid ) values ( 'Surat',12); 		
+insert into districts (districtname,stateid ) values ( 'Tapi',12); 		
+insert into districts (districtname,stateid ) values ( 'Vadodara',12); 	
+insert into districts (districtname,stateid ) values ( 'Valsad',12);
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Ambala',13); 		
+insert into districts (districtname,stateid ) values ( 'Bhiwani',13); 	
+insert into districts (districtname,stateid ) values ( 'Faridabad',13); 	
+insert into districts (districtname,stateid ) values ( 'Fatehabad',13); 	
+insert into districts (districtname,stateid ) values ( 'Gurgaon',13); 	
+insert into districts (districtname,stateid ) values ( 'Hissar',13); 		
+insert into districts (districtname,stateid ) values ( 'Jhajjar',13); 	
+insert into districts (districtname,stateid ) values ( 'Jind',13); 		
+insert into districts (districtname,stateid ) values ( 'Karnal',13); 		
+insert into districts (districtname,stateid ) values ( 'Kaithal',13); 	
+insert into districts (districtname,stateid ) values ( 'Kurukshetra',13); 
+insert into districts (districtname,stateid ) values ( 'Mahendragarh',13);
+insert into districts (districtname,stateid ) values ( 'Mewat',13); 		
+insert into districts (districtname,stateid ) values ( 'Palwal',13); 		
+insert into districts (districtname,stateid ) values ( 'Panchkula',13); 	
+insert into districts (districtname,stateid ) values ( 'Panipat',13); 	
+insert into districts (districtname,stateid ) values ( 'Rewari',13); 		
+insert into districts (districtname,stateid ) values ( 'Rohtak',13); 		
+insert into districts (districtname,stateid ) values ( 'Sirsa',13); 		
+insert into districts (districtname,stateid ) values ( 'Sonipat',13); 	
+insert into districts (districtname,stateid ) values ( 'Yamuna Nagar',13);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bilaspur',14); 	
+insert into districts (districtname,stateid ) values ( 'Chamba',14); 		
+insert into districts (districtname,stateid ) values ( 'Hamirpur',14); 	
+insert into districts (districtname,stateid ) values ( 'Kangra',14); 		
+insert into districts (districtname,stateid ) values ( 'Kinnaur',14); 	
+insert into districts (districtname,stateid ) values ( 'Kullu',14); 		
+insert into districts (districtname,stateid ) values ( 'Lahaul and Spiti',14);
+insert into districts (districtname,stateid ) values ( 'Mandi',14); 		
+insert into districts (districtname,stateid ) values ( 'Shimla',14); 		
+insert into districts (districtname,stateid ) values ( 'Sirmaur',14); 	
+insert into districts (districtname,stateid ) values ( 'Solan',14); 		
+insert into districts (districtname,stateid ) values ( 'Una',14);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Anantnag',15); 	
+insert into districts (districtname,stateid ) values ( 'Badgam',15); 		
+insert into districts (districtname,stateid ) values ( 'Bandipora',15); 
+insert into districts (districtname,stateid ) values ( 'Baramulla',15); 
+insert into districts (districtname,stateid ) values ( 'Doda',15); 		
+insert into districts (districtname,stateid ) values ( 'Ganderbal',15); 
+insert into districts (districtname,stateid ) values ( 'Jammu',15); 		
+insert into districts (districtname,stateid ) values ( 'Kargil',15); 		
+insert into districts (districtname,stateid ) values ( 'Kathua',15); 		
+insert into districts (districtname,stateid ) values ( 'Kishtwar',15); 	
+insert into districts (districtname,stateid ) values ( 'Kupwara',15); 	
+insert into districts (districtname,stateid ) values ( 'Kulgam',15); 		
+insert into districts (districtname,stateid ) values ( 'Leh',15); 		
+insert into districts (districtname,stateid ) values ( 'Poonch',15); 		
+insert into districts (districtname,stateid ) values ( 'Pulwama',15); 	
+insert into districts (districtname,stateid ) values ( 'Rajouri',15); 	
+insert into districts (districtname,stateid ) values ( 'Ramban',15); 		
+insert into districts (districtname,stateid ) values ( 'Reasi',15); 		
+insert into districts (districtname,stateid ) values ( 'Samba',15); 		
+insert into districts (districtname,stateid ) values ( 'Shopian',15); 	
+insert into districts (districtname,stateid ) values ( 'Srinagar',15); 	
+insert into districts (districtname,stateid ) values ( 'Udhampur',15);  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bokaro',16); 		
+insert into districts (districtname,stateid ) values ( 'Chatra',16); 		
+insert into districts (districtname,stateid ) values ( 'Deoghar',16); 	
+insert into districts (districtname,stateid ) values ( 'Dhanbad',16); 	
+insert into districts (districtname,stateid ) values ( 'Dumka',16); 		
+insert into districts (districtname,stateid ) values ( 'East Singhbhum',16); 	
+insert into districts (districtname,stateid ) values ( 'Garhwa',16); 		
+insert into districts (districtname,stateid ) values ( 'Giridih',16); 	
+insert into districts (districtname,stateid ) values ( 'Godda',16); 		
+insert into districts (districtname,stateid ) values ( 'Gumla',16); 		
+insert into districts (districtname,stateid ) values ( 'Hazaribag',16); 	
+insert into districts (districtname,stateid ) values ( 'Jamtara',16); 	
+insert into districts (districtname,stateid ) values ( 'Khunti',16); 		
+insert into districts (districtname,stateid ) values ( 'Koderma',16); 	
+insert into districts (districtname,stateid ) values ( 'Latehar',16); 	
+insert into districts (districtname,stateid ) values ( 'Lohardaga',16); 	
+insert into districts (districtname,stateid ) values ( 'Pakur',16); 		
+insert into districts (districtname,stateid ) values ( 'Palamu',16); 		
+insert into districts (districtname,stateid ) values ( 'Ramgarh',16); 	
+insert into districts (districtname,stateid ) values ( 'Ranchi',16); 		
+insert into districts (districtname,stateid ) values ( 'Sahibganj',16); 	
+insert into districts (districtname,stateid ) values ( 'Seraikela Kharsawan',16);
+insert into districts (districtname,stateid ) values ( 'Simdega',16); 	
+insert into districts (districtname,stateid ) values ( 'West Singhbhum',16);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bagalkot',17); 	
+insert into districts (districtname,stateid ) values ( 'Bangalore Rural',17);
+insert into districts (districtname,stateid ) values ( 'Bangalore Urban',17);
+insert into districts (districtname,stateid ) values ( 'Belgaum',17); 	
+insert into districts (districtname,stateid ) values ( 'Bellary',17); 	
+insert into districts (districtname,stateid ) values ( 'Bidar',17); 		
+insert into districts (districtname,stateid ) values ( 'Bijapur',17); 	
+insert into districts (districtname,stateid ) values ( 'Chamarajnagar',17); 	
+insert into districts (districtname,stateid ) values ( 'Chikkamagaluru',17); 
+insert into districts (districtname,stateid ) values ( 'Chikkaballapur',17); 
+insert into districts (districtname,stateid ) values ( 'Chitradurga',17); 	
+insert into districts (districtname,stateid ) values ( 'Davanagere',17); 	
+insert into districts (districtname,stateid ) values ( 'Dharwad',17); 	
+insert into districts (districtname,stateid ) values ( 'Dakshina Kannad',17);
+insert into districts (districtname,stateid ) values ( 'Gadag',17); 		
+insert into districts (districtname,stateid ) values ( 'Gulbarga',17); 	
+insert into districts (districtname,stateid ) values ( 'Hassan',17); 		
+insert into districts (districtname,stateid ) values ( 'Haveri district',17);
+insert into districts (districtname,stateid ) values ( 'Kodagu',17); 		
+insert into districts (districtname,stateid ) values ( 'Kolar',17); 		
+insert into districts (districtname,stateid ) values ( 'Koppal',17); 		
+insert into districts (districtname,stateid ) values ( 'Mandya',17); 		
+insert into districts (districtname,stateid ) values ( 'Mysore',17); 		
+insert into districts (districtname,stateid ) values ( 'Raichur',17); 	
+insert into districts (districtname,stateid ) values ( 'Shimoga',17); 	
+insert into districts (districtname,stateid ) values ( 'Tumkur',17); 		
+insert into districts (districtname,stateid ) values ( 'Udupi',17); 		
+insert into districts (districtname,stateid ) values ( 'Uttara Kannada',17); 
+insert into districts (districtname,stateid ) values ( 'Ramanagara',17); 	
+insert into districts (districtname,stateid ) values ( 'Yadgir',17);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Alappuzha',18); 		
+insert into districts (districtname,stateid ) values ( 'Ernakulam',18); 		
+insert into districts (districtname,stateid ) values ( 'Idukki',18); 			
+insert into districts (districtname,stateid ) values ( 'Kannur',18); 			
+insert into districts (districtname,stateid ) values ( 'Kasaragod',18); 		
+insert into districts (districtname,stateid ) values ( 'Kollam',18); 			
+insert into districts (districtname,stateid ) values ( 'Kottayam',18); 		
+insert into districts (districtname,stateid ) values ( 'Kozhikode',18); 		
+insert into districts (districtname,stateid ) values ( 'Malappuram',18); 		
+insert into districts (districtname,stateid ) values ( 'Palakkad',18); 		
+insert into districts (districtname,stateid ) values ( 'Pathanamthitta',18); 		
+insert into districts (districtname,stateid ) values ( 'Thrissur',18); 		
+insert into districts (districtname,stateid ) values ( 'Thiruvananthapuram',18);
+insert into districts (districtname,stateid ) values ( 'Wayanad',18);
+
+
+insert into districts (districtname,stateid ) values ( 'Lakshadweep',19);
+
+insert into districts (districtname,stateid ) values ( 'Agar',20); 		
+insert into districts (districtname,stateid ) values ( 'Alirajpur',20); 	
+insert into districts (districtname,stateid ) values ( 'Anuppur',20); 	
+insert into districts (districtname,stateid ) values ( 'Ashok Nagar',20); 	
+insert into districts (districtname,stateid ) values ( 'Balaghat',20); 	
+insert into districts (districtname,stateid ) values ( 'Barwani',20); 	
+insert into districts (districtname,stateid ) values ( 'Betul',20); 		
+insert into districts (districtname,stateid ) values ( 'Bhind',20); 		
+insert into districts (districtname,stateid ) values ( 'Bhopal',20); 		
+insert into districts (districtname,stateid ) values ( 'Burhanpur',20); 	
+insert into districts (districtname,stateid ) values ( 'Chhatarpur',20); 	
+insert into districts (districtname,stateid ) values ( 'Chhindwara',20); 	
+insert into districts (districtname,stateid ) values ( 'Damoh',20); 		
+insert into districts (districtname,stateid ) values ( 'Datia',20); 		
+insert into districts (districtname,stateid ) values ( 'Dewas',20); 		
+insert into districts (districtname,stateid ) values ( 'Dhar',20); 		
+insert into districts (districtname,stateid ) values ( 'Dindori',20); 	
+insert into districts (districtname,stateid ) values ( 'Guna',20); 		
+insert into districts (districtname,stateid ) values ( 'Gwalior',20); 	
+insert into districts (districtname,stateid ) values ( 'Harda',20); 		
+insert into districts (districtname,stateid ) values ( 'Hoshangabad',20); 	
+insert into districts (districtname,stateid ) values ( 'Indore',20); 		
+insert into districts (districtname,stateid ) values ( 'Jabalpur',20); 	
+insert into districts (districtname,stateid ) values ( 'Jhabua',20); 		
+insert into districts (districtname,stateid ) values ( 'Katni',20); 		
+insert into districts (districtname,stateid ) values ( 'Khandwa (East Nimar)',20);
+insert into districts (districtname,stateid ) values ( 'Khargone (West Nimar)',20);
+insert into districts (districtname,stateid ) values ( 'Mandla',20); 		
+insert into districts (districtname,stateid ) values ( 'Mandsaur',20); 	
+insert into districts (districtname,stateid ) values ( 'Morena',20); 		
+insert into districts (districtname,stateid ) values ( 'Narsinghpur',20); 	
+insert into districts (districtname,stateid ) values ( 'Neemuch',20); 	
+insert into districts (districtname,stateid ) values ( 'Panna',20); 		
+insert into districts (districtname,stateid ) values ( 'Raisen',20); 		
+insert into districts (districtname,stateid ) values ( 'Rajgarh',20); 	
+insert into districts (districtname,stateid ) values ( 'Ratlam',20); 		
+insert into districts (districtname,stateid ) values ( 'Rewa',20); 		
+insert into districts (districtname,stateid ) values ( 'Sagar',20); 		
+insert into districts (districtname,stateid ) values ( 'Satna',20); 		
+insert into districts (districtname,stateid ) values ( 'Sehore',20); 		
+insert into districts (districtname,stateid ) values ( 'Seoni',20); 		
+insert into districts (districtname,stateid ) values ( 'Shahdol',20); 	
+insert into districts (districtname,stateid ) values ( 'Shajapur',20); 	
+insert into districts (districtname,stateid ) values ( 'Sheopur',20); 	
+insert into districts (districtname,stateid ) values ( 'Shivpuri',20); 	
+insert into districts (districtname,stateid ) values ( 'Sidhi',20); 		
+insert into districts (districtname,stateid ) values ( 'Singrauli',20); 	
+insert into districts (districtname,stateid ) values ( 'Tikamgarh',20); 	
+insert into districts (districtname,stateid ) values ( 'Ujjain',20); 		
+insert into districts (districtname,stateid ) values ( 'Umaria',20); 		
+insert into districts (districtname,stateid ) values ( 'Vidisha',20);        
+
+
+
+insert into districts (districtname,stateid ) values ( 'Beed',21); 		
+insert into districts (districtname,stateid ) values ( 'Bhandara',21); 	
+insert into districts (districtname,stateid ) values ( 'Buldhana',21); 	
+insert into districts (districtname,stateid ) values ( 'Chandrapur',21); 	
+insert into districts (districtname,stateid ) values ( 'Dhule',21); 		
+insert into districts (districtname,stateid ) values ( 'Gadchiroli',21); 	
+insert into districts (districtname,stateid ) values ( 'Gondia',21); 		
+insert into districts (districtname,stateid ) values ( 'Hingoli',21); 	
+insert into districts (districtname,stateid ) values ( 'Jalgaon',21); 	
+insert into districts (districtname,stateid ) values ( 'Jalna',21); 		
+insert into districts (districtname,stateid ) values ( 'Kolhapur',21); 	
+insert into districts (districtname,stateid ) values ( 'Latur',21); 		
+insert into districts (districtname,stateid ) values ( 'Mumbai City',21); 	
+insert into districts (districtname,stateid ) values ( 'Mumbai suburban',21); 
+insert into districts (districtname,stateid ) values ( 'Nanded',21); 		
+insert into districts (districtname,stateid ) values ( 'Nandurbar',21); 	
+insert into districts (districtname,stateid ) values ( 'Nagpur',21); 		
+insert into districts (districtname,stateid ) values ( 'Nashik',21); 		
+insert into districts (districtname,stateid ) values ( 'Osmanabad',21); 	
+insert into districts (districtname,stateid ) values ( 'Parbhani',21); 	
+insert into districts (districtname,stateid ) values ( 'Pune',21); 		
+insert into districts (districtname,stateid ) values ( 'Raigad',21); 		
+insert into districts (districtname,stateid ) values ( 'Ratnagiri',21); 	
+insert into districts (districtname,stateid ) values ( 'Sangli',21); 		
+insert into districts (districtname,stateid ) values ( 'Satara',21); 		
+insert into districts (districtname,stateid ) values ( 'Sindhudurg',21); 	
+insert into districts (districtname,stateid ) values ( 'Solapur',21); 	
+insert into districts (districtname,stateid ) values ( 'Thane',21); 		
+insert into districts (districtname,stateid ) values ( 'Wardha',21); 		
+insert into districts (districtname,stateid ) values ( 'Washim',21); 		
+insert into districts (districtname,stateid ) values ( 'Yavatmal',21);        
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bishnupur',22); 	
+insert into districts (districtname,stateid ) values ( 'Churachandpur',22);
+insert into districts (districtname,stateid ) values ( 'Chandel',22); 	
+insert into districts (districtname,stateid ) values ( 'Imphal East',22); 	
+insert into districts (districtname,stateid ) values ( 'Senapati',22); 	
+insert into districts (districtname,stateid ) values ( 'Tamenglong',22); 	
+insert into districts (districtname,stateid ) values ( 'Thoubal',22); 	
+insert into districts (districtname,stateid ) values ( 'Ukhrul',22); 		
+insert into districts (districtname,stateid ) values ( 'Imphal West',22);  
+
+
+insert into districts (districtname,stateid ) values ( 'East Garo Hills',23); 
+insert into districts (districtname,stateid ) values ( 'East Khasi Hills',23);
+insert into districts (districtname,stateid ) values ( 'Jaintia Hills',23); 	
+insert into districts (districtname,stateid ) values ( 'Ri Bhoi',23); 	
+insert into districts (districtname,stateid ) values ( 'South Garo Hills',23);
+insert into districts (districtname,stateid ) values ( 'West Garo Hills',23); 
+insert into districts (districtname,stateid ) values ( 'West Khasi Hills',23);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Aizawl',24); 		
+insert into districts (districtname,stateid ) values ( 'Champhai',24); 
+insert into districts (districtname,stateid ) values ( 'Kolasib',24); 	
+insert into districts (districtname,stateid ) values ( 'Lawngtlai',24);
+insert into districts (districtname,stateid ) values ( 'Lunglei',24); 	
+insert into districts (districtname,stateid ) values ( 'Mamit',24); 		
+insert into districts (districtname,stateid ) values ( 'Saiha',24); 		
+insert into districts (districtname,stateid ) values ( 'Serchhip',24);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Dimapur',25); 	
+insert into districts (districtname,stateid ) values ( 'Kiphire',25); 	
+insert into districts (districtname,stateid ) values ( 'Kohima',25); 		
+insert into districts (districtname,stateid ) values ( 'Longleng',25); 	
+insert into districts (districtname,stateid ) values ( 'Mokokchung',25);
+insert into districts (districtname,stateid ) values ( 'Mon',25); 		
+insert into districts (districtname,stateid ) values ( 'Peren',25); 		
+insert into districts (districtname,stateid ) values ( 'Phek',25); 		
+insert into districts (districtname,stateid ) values ( 'Tuensang',25); 	
+insert into districts (districtname,stateid ) values ( 'Wokha',25); 		
+insert into districts (districtname,stateid ) values ( 'Zunheboto',25);
+
+
+
+insert into districts (districtname,stateid ) values ( 'Angul',26); 		
+insert into districts (districtname,stateid ) values ( 'Boudh (Bauda)',26); 	
+insert into districts (districtname,stateid ) values ( 'Bhadrak',26); 	
+insert into districts (districtname,stateid ) values ( 'Balangir',26); 	
+insert into districts (districtname,stateid ) values ( 'Bargarh (Baragarh)',26);
+insert into districts (districtname,stateid ) values ( 'Balasore',26); 	
+insert into districts (districtname,stateid ) values ( 'Cuttack',26); 	
+insert into districts (districtname,stateid ) values ( 'Debagarh (Deogarh)',26);
+insert into districts (districtname,stateid ) values ( 'Dhenkanal',26); 	
+insert into districts (districtname,stateid ) values ( 'Ganjam',26); 		
+insert into districts (districtname,stateid ) values ( 'Gajapati',26); 	
+insert into districts (districtname,stateid ) values ( 'Jharsuguda',26); 	
+insert into districts (districtname,stateid ) values ( 'Jajpur',26); 		
+insert into districts (districtname,stateid ) values ( 'Jagatsinghpur',26); 	
+insert into districts (districtname,stateid ) values ( 'Khordha',26); 	
+insert into districts (districtname,stateid ) values ( 'Kendujhar (Keonjhar)',26);
+insert into districts (districtname,stateid ) values ( 'Kalahandi',26); 	
+insert into districts (districtname,stateid ) values ( 'Kandhamal',26); 	
+insert into districts (districtname,stateid ) values ( 'Koraput',26); 	
+insert into districts (districtname,stateid ) values ( 'Kendrapara',26); 	
+insert into districts (districtname,stateid ) values ( 'Malkangiri',26); 	
+insert into districts (districtname,stateid ) values ( 'Mayurbhanj',26); 	
+insert into districts (districtname,stateid ) values ( 'Nabarangpur',26); 	
+insert into districts (districtname,stateid ) values ( 'Nuapada',26); 	
+insert into districts (districtname,stateid ) values ( 'Nayagarh',26); 	
+insert into districts (districtname,stateid ) values ( 'Puri',26); 		
+insert into districts (districtname,stateid ) values ( 'Rayagada',26); 	
+insert into districts (districtname,stateid ) values ( 'Sambalpur',26); 	
+insert into districts (districtname,stateid ) values ( 'Subarnapur (Sonepur)',26);
+insert into districts (districtname,stateid ) values ( 'Sundergarh',26);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Karaikal',27); 	
+insert into districts (districtname,stateid ) values ( 'Mahe',27); 		
+insert into districts (districtname,stateid ) values ( 'Pondicherry',27);
+insert into districts (districtname,stateid ) values ( 'Yanam',27);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Amritsar',28); 	
+insert into districts (districtname,stateid ) values ( 'Barnala',28); 	
+insert into districts (districtname,stateid ) values ( 'Bathinda',28); 	
+insert into districts (districtname,stateid ) values ( 'Firozpur',28); 	
+insert into districts (districtname,stateid ) values ( 'Faridkot',28); 	
+insert into districts (districtname,stateid ) values ( 'Fatehgarh Sahib',28); 
+insert into districts (districtname,stateid ) values ( 'Fazilka',28);	
+insert into districts (districtname,stateid ) values ( 'Gurdaspur',28); 	
+insert into districts (districtname,stateid ) values ( 'Hoshiarpur',28); 	
+insert into districts (districtname,stateid ) values ( 'Jalandhar',28); 	
+insert into districts (districtname,stateid ) values ( 'Kapurthala',28); 	
+insert into districts (districtname,stateid ) values ( 'Ludhiana',28); 	
+insert into districts (districtname,stateid ) values ( 'Mansa',28); 		
+insert into districts (districtname,stateid ) values ( 'Moga',28); 		
+insert into districts (districtname,stateid ) values ( 'Sri Muktsar Sahib',28);
+insert into districts (districtname,stateid ) values ( 'Pathankot',28); 	
+insert into districts (districtname,stateid ) values ( 'Patiala',28); 	
+insert into districts (districtname,stateid ) values ( 'Rupnagar',28); 	
+insert into districts (districtname,stateid ) values ( 'Ajitgarh (Mohali)',28);
+insert into districts (districtname,stateid ) values ( 'Sangrur',28); 	
+insert into districts (districtname,stateid ) values ( 'Shahid Bhagat Singh Nagar',28);
+insert into districts (districtname,stateid ) values ( 'Tarn Taran',28);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Ajmer',29); 		
+insert into districts (districtname,stateid ) values ( 'Alwar',29); 		
+insert into districts (districtname,stateid ) values ( 'Bikaner',29); 	
+insert into districts (districtname,stateid ) values ( 'Barmer',29); 		
+insert into districts (districtname,stateid ) values ( 'Banswara',29); 	
+insert into districts (districtname,stateid ) values ( 'Bharatpur',29); 	
+insert into districts (districtname,stateid ) values ( 'Baran',29); 		
+insert into districts (districtname,stateid ) values ( 'Bundi',29); 		
+insert into districts (districtname,stateid ) values ( 'Bhilwara',29); 	
+insert into districts (districtname,stateid ) values ( 'Churu',29); 		
+insert into districts (districtname,stateid ) values ( 'Chittorgarh',29); 	
+insert into districts (districtname,stateid ) values ( 'Dausa',29); 		
+insert into districts (districtname,stateid ) values ( 'Dholpur',29); 	
+insert into districts (districtname,stateid ) values ( 'Dungapur',29); 	
+insert into districts (districtname,stateid ) values ( 'Ganganagar',29); 	
+insert into districts (districtname,stateid ) values ( 'Hanumangarh',29); 	
+insert into districts (districtname,stateid ) values ( 'Jhunjhunu',29); 	
+insert into districts (districtname,stateid ) values ( 'Jalore',29); 		
+insert into districts (districtname,stateid ) values ( 'Jodhpur',29); 	
+insert into districts (districtname,stateid ) values ( 'Jaipur',29); 		
+insert into districts (districtname,stateid ) values ( 'Jaisalmer',29); 	
+insert into districts (districtname,stateid ) values ( 'Jhalawar',29); 	
+insert into districts (districtname,stateid ) values ( 'Karauli',29); 	
+insert into districts (districtname,stateid ) values ( 'Kota',29); 		
+insert into districts (districtname,stateid ) values ( 'Nagaur',29); 		
+insert into districts (districtname,stateid ) values ( 'Pali',29); 		
+insert into districts (districtname,stateid ) values ( 'Pratapgarh',29); 	
+insert into districts (districtname,stateid ) values ( 'Rajsamand',29); 	
+insert into districts (districtname,stateid ) values ( 'Sikar',29); 		
+insert into districts (districtname,stateid ) values ( 'Sawai Madhopur',29);
+insert into districts (districtname,stateid ) values ( 'Sirohi',29); 		
+insert into districts (districtname,stateid ) values ( 'Tonk',29); 		
+insert into districts (districtname,stateid ) values ( 'Udaipur',29);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'East Sikkim',30); 	
+insert into districts (districtname,stateid ) values ( 'North Sikkim',30); 
+insert into districts (districtname,stateid ) values ( 'South Sikkim',30); 
+insert into districts (districtname,stateid ) values ( 'West Sikkim',30);
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Ariyalur',31); 	
+insert into districts (districtname,stateid ) values ( 'Chennai',31); 	
+insert into districts (districtname,stateid ) values ( 'Coimbatore',31); 	
+insert into districts (districtname,stateid ) values ( 'Cuddalore',31); 	
+insert into districts (districtname,stateid ) values ( 'Dharmapuri',31); 	
+insert into districts (districtname,stateid ) values ( 'Dindigul',31); 	
+insert into districts (districtname,stateid ) values ( 'Erode',31); 		
+insert into districts (districtname,stateid ) values ( 'Kanchipuram',31); 	
+insert into districts (districtname,stateid ) values ( 'Kanyakumari',31); 	
+insert into districts (districtname,stateid ) values ( 'Karur',31); 		
+insert into districts (districtname,stateid ) values ( 'Krishnagiri',31); 	
+insert into districts (districtname,stateid ) values ( 'Madurai',31); 	
+insert into districts (districtname,stateid ) values ( 'Nagapattinam',31); 	
+insert into districts (districtname,stateid ) values ( 'Nilgiris',31); 	
+insert into districts (districtname,stateid ) values ( 'Namakkal',31); 	
+insert into districts (districtname,stateid ) values ( 'Perambalur',31); 	
+insert into districts (districtname,stateid ) values ( 'Pudukkottai',31); 	
+insert into districts (districtname,stateid ) values ( 'Ramanathapuram',31); 
+insert into districts (districtname,stateid ) values ( 'Salem',31); 		
+insert into districts (districtname,stateid ) values ( 'Sivaganga',31); 	
+insert into districts (districtname,stateid ) values ( 'Tirupur',31); 	
+insert into districts (districtname,stateid ) values ( 'Tiruchirappalli',31);
+insert into districts (districtname,stateid ) values ( 'Theni',31); 		
+insert into districts (districtname,stateid ) values ( 'Tirunelveli',31); 	
+insert into districts (districtname,stateid ) values ( 'Thanjavur',31); 	
+insert into districts (districtname,stateid ) values ( 'Thoothukudi',31); 	
+insert into districts (districtname,stateid ) values ( 'Tiruvallur',31); 	
+insert into districts (districtname,stateid ) values ( 'Tiruvarur',31); 	
+insert into districts (districtname,stateid ) values ( 'Tiruvannamalai',31); 
+insert into districts (districtname,stateid ) values ( 'Vellore',31); 	
+insert into districts (districtname,stateid ) values ( 'Viluppuram',31); 	
+insert into districts (districtname,stateid ) values ( 'Virudhunagar',31);
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Dhalai',32); 		
+insert into districts (districtname,stateid ) values ( 'North Tripura',32);
+insert into districts (districtname,stateid ) values ( 'South Tripura',32);
+insert into districts (districtname,stateid ) values ( 'Khowai',32);	 	
+insert into districts (districtname,stateid ) values ( 'West Tripura',32);
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Agra',33); 		
+insert into districts (districtname,stateid ) values ( 'Aligarh',33); 	
+insert into districts (districtname,stateid ) values ( 'Allahabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Ambedkar Nagar',33); 	
+insert into districts (districtname,stateid ) values ( 'Auraiya',33); 	
+insert into districts (districtname,stateid ) values ( 'Azamgarh',33); 	
+insert into districts (districtname,stateid ) values ( 'Bagpat',33); 		
+insert into districts (districtname,stateid ) values ( 'Bahraich',33); 	
+insert into districts (districtname,stateid ) values ( 'Ballia',33); 		
+insert into districts (districtname,stateid ) values ( 'Balrampur',33); 	
+insert into districts (districtname,stateid ) values ( 'Banda',33); 		
+insert into districts (districtname,stateid ) values ( 'Barabanki',33); 	
+insert into districts (districtname,stateid ) values ( 'Bareilly',33); 	
+insert into districts (districtname,stateid ) values ( 'Basti',33); 		
+insert into districts (districtname,stateid ) values ( 'Bijnor',33); 		
+insert into districts (districtname,stateid ) values ( 'Budaun',33); 		
+insert into districts (districtname,stateid ) values ( 'Bulandshahr',33); 	
+insert into districts (districtname,stateid ) values ( 'Chandauli',33); 	
+insert into districts (districtname,stateid ) values ( 'Chhatrapati Shahuji Maharaj Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Chitrakoot',33); 	
+insert into districts (districtname,stateid ) values ( 'Deoria',33); 		
+insert into districts (districtname,stateid ) values ( 'Etah',33); 		
+insert into districts (districtname,stateid ) values ( 'Etawah',33); 		
+insert into districts (districtname,stateid ) values ( 'Faizabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Farrukhabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Fatehpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Firozabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Gautam Buddh Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Ghaziabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Ghazipur',33); 	
+insert into districts (districtname,stateid ) values ( 'Gonda',33); 		
+insert into districts (districtname,stateid ) values ( 'Gorakhpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Hamirpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Hardoi',33); 		
+insert into districts (districtname,stateid ) values ( 'Hathras',33); 	
+insert into districts (districtname,stateid ) values ( 'Jalaun',33); 		
+insert into districts (districtname,stateid ) values ( 'Jaunpur district',33);
+insert into districts (districtname,stateid ) values ( 'Jhansi',33); 		
+insert into districts (districtname,stateid ) values ( 'Jyotiba Phule Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Kannauj',33); 	
+insert into districts (districtname,stateid ) values ( 'Kanpur',33); 		
+insert into districts (districtname,stateid ) values ( 'Kanshi Ram Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Kaushambi',33); 	
+insert into districts (districtname,stateid ) values ( 'Kushinagar',33); 	
+insert into districts (districtname,stateid ) values ( 'Lakhimpur Kheri',33); 
+insert into districts (districtname,stateid ) values ( 'Lalitpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Lucknow',33); 	
+insert into districts (districtname,stateid ) values ( 'Maharajganj',33); 	
+insert into districts (districtname,stateid ) values ( 'Mahoba',33); 		
+insert into districts (districtname,stateid ) values ( 'Mainpuri',33); 	
+insert into districts (districtname,stateid ) values ( 'Mathura',33); 	
+insert into districts (districtname,stateid ) values ( 'Mau',33); 		
+insert into districts (districtname,stateid ) values ( 'Meerut',33); 		
+insert into districts (districtname,stateid ) values ( 'Mirzapur',33); 	
+insert into districts (districtname,stateid ) values ( 'Moradabad',33); 	
+insert into districts (districtname,stateid ) values ( 'Muzaffarnagar',33); 	
+insert into districts (districtname,stateid ) values ( 'Panchsheel Nagar district (Hapur)',33);
+insert into districts (districtname,stateid ) values ( 'Pilibhit',33); 	
+insert into districts (districtname,stateid ) values ( 'Pratapgarh',33); 	
+insert into districts (districtname,stateid ) values ( 'Raebareli',33); 	
+insert into districts (districtname,stateid ) values ( 'Ramabai Nagar (Kanpur Dehat)',33);
+insert into districts (districtname,stateid ) values ( 'Rampur',33); 		
+insert into districts (districtname,stateid ) values ( 'Saharanpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Sant Kabir Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Sant Ravidas Nagar',33);
+insert into districts (districtname,stateid ) values ( 'Shahjahanpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Shamli',33);	 	
+insert into districts (districtname,stateid ) values ( 'Shravasti',33); 	
+insert into districts (districtname,stateid ) values ( 'Siddharthnagar',33); 	
+insert into districts (districtname,stateid ) values ( 'Sitapur',33); 	
+insert into districts (districtname,stateid ) values ( 'Sonbhadra',33); 	
+insert into districts (districtname,stateid ) values ( 'Sultanpur',33); 	
+insert into districts (districtname,stateid ) values ( 'Unnao',33); 		
+insert into districts (districtname,stateid ) values ( 'Varanasi',33);        
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Almora',34); 		
+insert into districts (districtname,stateid ) values ( 'Bageshwar',34); 	
+insert into districts (districtname,stateid ) values ( 'Chamoli',34); 	
+insert into districts (districtname,stateid ) values ( 'Champawat',34); 	
+insert into districts (districtname,stateid ) values ( 'Dehradun',34); 	
+insert into districts (districtname,stateid ) values ( 'Haridwar',34); 	
+insert into districts (districtname,stateid ) values ( 'Nainital',34); 	
+insert into districts (districtname,stateid ) values ( 'Pauri Garhwal',34); 	
+insert into districts (districtname,stateid ) values ( 'Pithoragarh',34); 	
+insert into districts (districtname,stateid ) values ( 'Rudraprayag',34); 	
+insert into districts (districtname,stateid ) values ( 'Tehri Garhwal',34); 	
+insert into districts (districtname,stateid ) values ( 'Udham Singh Nagar',34);
+insert into districts (districtname,stateid ) values ( 'Uttarkashi',34);
+
+
+
+
+
+insert into districts (districtname,stateid ) values ( 'Bankura',35); 	
+insert into districts (districtname,stateid ) values ( 'Bardhaman',35); 	
+insert into districts (districtname,stateid ) values ( 'Birbhum',35); 	
+insert into districts (districtname,stateid ) values ( 'Cooch Behar',35); 	
+insert into districts (districtname,stateid ) values ( 'Dakshin Dinajpur',35);
+insert into districts (districtname,stateid ) values ( 'Darjeeling',35); 	
+insert into districts (districtname,stateid ) values ( 'Hooghly',35); 	
+insert into districts (districtname,stateid ) values ( 'Howrah',35); 		
+insert into districts (districtname,stateid ) values ( 'Jalpaiguri',35); 	
+insert into districts (districtname,stateid ) values ( 'Kolkata',35); 	
+insert into districts (districtname,stateid ) values ( 'Maldah',35); 		
+insert into districts (districtname,stateid ) values ( 'Murshidabad',35); 	
+insert into districts (districtname,stateid ) values ( 'Nadia',35); 		
+insert into districts (districtname,stateid ) values ( 'North 24 Parganas',35);
+insert into districts (districtname,stateid ) values ( 'Paschim Medinipur',35);
+insert into districts (districtname,stateid ) values ( 'Purba Medinipur',35); 
+insert into districts (districtname,stateid ) values ( 'Purulia',35); 	
+insert into districts (districtname,stateid ) values ( 'South 24 Parganas',35);
+insert into districts (districtname,stateid ) values ( 'Uttar Dinajpur',35);  

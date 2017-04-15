@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sr:configuration xmlns:sr="http://www.scholarreport.in/srconfigXMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.scholarreport.in/srconfigXMLSchema ../resources/srconfigXMLSchema.xsd ">
+	<entry>
+		<entryname>workerthreadprefix</entryname>
+		<entryvalue>entryvalue</entryvalue>
+	</entry>
+	<entry>
+		<entryname>workmonitordelay</entryname>
+		<entryvalue>entryvalue</entryvalue>
+	</entry>
+	<entry>
+		<entryname>corePoolSize</entryname>
+		<entryvalue>entryvalue</entryvalue>
+	</entry>
+	<entry>
+		<entryname>maximumPoolSize</entryname>
+		<entryvalue>entryvalue</entryvalue>
+	</entry>
+	<entry>
+		<entryname>keepAliveTime</entryname>
+		<entryvalue>entryvalue</entryvalue>
+	</entry>
+</sr:configuration>

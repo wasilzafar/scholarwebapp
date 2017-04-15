@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+
+#head{
+	height: auto;
+	width: 100%;
+	border-width: 0px;
+	margin: 0px
+}
+
+#logo{
+	width : 17%;
+	margin: 0px;
+	float : left;
+}
+
+#text{
+	height : auto;
+	width : 83%;
+	margin: 0px;
+	float : right;
+}
+
+#form{
+	clear:both;
+	background-color: gray;
+}
+#content{
+	width: 77%;
+	position : relative;
+	left : 20%;
+	background-color: white
+}
+label{
+	font-size: large;
+    font-family: Trebuchet MS
+}
+
+#content * {
+	left : 10px;
+}
+#substatus{
+	visibility: hidden;
+}
+#fellowship{
+	visibility: hidden;
+}

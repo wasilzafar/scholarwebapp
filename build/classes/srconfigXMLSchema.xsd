@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.scholarreport.in/srconfigXMLSchema"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sr="http://www.scholarreport.in/srconfigXMLSchema">
+	<element name="configuration">
+		<complexType>
+			<sequence>
+				<element name="entry" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="entryname" type="string" />
+							<element name="entryvalue" type="string" />
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

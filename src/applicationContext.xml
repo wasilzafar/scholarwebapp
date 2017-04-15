@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - Application context definition for "springapp" DispatcherServlet. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+<bean id="duke" class="in.scholarreport.spring3.Juggler">
+	<constructor-arg value="20" />
+	</bean>
+<bean id="helloBean" class="in.scholarreport.struts2.actions.HelloAction"></bean>
+	
+</beans>

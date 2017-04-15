@@ -1,0 +1,231 @@
+create table institute (
+instituteid INT NOT NULL AUTO_INCREMENT,
+institutename    VARCHAR(255) NOT NULL,
+PRIMARY KEY (instituteid)
+);
+
+
+create table faculty (
+facultyid INT NOT NULL AUTO_INCREMENT,
+facultyname      VARCHAR(255) NOT NULL,
+instituteid       INT NOT NULL,
+PRIMARY KEY (facultyid),
+FOREIGN KEY (instituteid) REFERENCES institute(instituteid)
+);
+
+create table department (
+departmentid       INT NOT NULL AUTO_INCREMENT,
+departmentname   VARCHAR(255) NOT NULL,
+facultyid INT NOT NULL,
+PRIMARY KEY (departmentid),
+FOREIGN KEY (facultyid) REFERENCES faculty(facultyid)
+);
+
+create table supervisor (
+supervisorID CHAR(32) NOT NULL,
+salutation	VARCHAR(10),
+supervisorFirstName VARCHAR(24) NOT NULL,
+supervisorMiddleName VARCHAR(24),
+supervisorLastName VARCHAR(24) NOT NULL,
+supervisorScreenName      VARCHAR(24),
+supervisorFatherFirstName VARCHAR(24),
+supervisorFatherLastName VARCHAR(24),
+supervisorSpouseFirstName VARCHAR(24),
+supervisorSpouseLastName VARCHAR(24),
+dob DATE,
+mobileNumber VARCHAR(10),
+landlineNumber     VARCHAR(20),
+issuperadmin CHAR(1),
+isadmin CHAR(1),
+isdean CHAR(1),
+ishead CHAR(1),
+role       varCHAR(20),
+reportto	CHAR(32),
+emailID VARCHAR(128),
+correspondenceAddress VARCHAR(1024),
+cState     INT,
+cDistrict  INT,
+cZipCode   VARCHAR(20),
+permanentAddress VARCHAR(1024),
+pState     INT,
+pDistrict  INT,
+pZipCode   VARCHAR(20),
+status        CHAR(10),
+institute INT NOT NULL,
+faculty   INT,
+department INT,
+designation    CHAR(30),
+dateCreated DATE,
+dateModified DATE,
+PRIMARY KEY (supervisorid)
+);
+
+
+
+
+create table scholar (
+scholarID CHAR(32) NOT NULL,
+scholarFirstName VARCHAR(24) NOT NULL,
+scholarMiddleName VARCHAR(24),
+scholarLastName VARCHAR(24) NOT NULL,
+scholarScreenName VARCHAR(24),
+scholarFatherFirstName VARCHAR(24),
+scholarFatherLastName VARCHAR(24),
+scholarSpouseFirstName VARCHAR(24),
+scholarSpouseLastName VARCHAR(24),
+dob DATE,
+gender VARCHAR(10),
+nationality VARCHAR(24),
+mobileNumber VARCHAR(10),
+landlineNumber      VARCHAR(20),
+emailID VARCHAR(128),
+status CHAR(10),
+correspondenceAddress VARCHAR(1024),
+cState     INT,
+cDistrict  INT,
+cZipCode   VARCHAR(20),
+permanentAddress VARCHAR(1024),
+pState     INT,
+pDistrict  INT,
+pZipCode   VARCHAR(20),
+category   VARCHAR(24),
+categorycode   CHAR(2),
+coursename VARCHAR(24),
+institute  INT NOT NULL,
+faculty    INT NOT NULL,
+department INT NOT NULL,
+enrollmentNumber INT,
+dateOfRegistration DATE,
+topic VARCHAR(1024),
+topicModified VARCHAR(1024),
+dateOfTopicModification DATE,
+languagesKnown	VARCHAR(512),
+supervisor CHAR(32),
+coSupervisor   CHAR(32),
+totalExperience    INT,
+examsPassed      VARCHAR(512),
+institutionsName        VARCHAR(1024),
+yearsOfPassing   VARCHAR(512),
+percentages      VARCHAR(512),
+subjects VARCHAR(1024),
+un CHAR(1),
+un_rno      CHAR(20),
+un_xam_yr    CHAR(4),
+un_ref_no   CHAR(20),
+un_ecert_no CHAR(20),
+sl CHAR(1),
+sl_rno      CHAR(20),
+sl_xam_yr    CHAR(4),
+sl_ref_no   CHAR(20),
+sl_ecert_no CHAR(20),
+cun CHAR(1),
+cun_rno     CHAR(20),
+cun_xam_yr   CHAR(4),
+cun_ref_no  CHAR(20),
+cun_ecert_no        CHAR(20),
+employersname   VARCHAR(512),
+positionsHeld    VARCHAR(512),
+employedfrom	VARCHAR(512),
+employedto	VARCHAR(512),
+dateCreated DATE,
+dateModified DATE,
+PRIMARY KEY (scholarID),
+FOREIGN KEY (institute) REFERENCES institute (instituteid),
+FOREIGN KEY (faculty) REFERENCES faculty(facultyid),
+FOREIGN KEY (department) REFERENCES department(departmentid),
+FOREIGN KEY (supervisor) REFERENCES supervisor(supervisorid)
+);
+
+
+
+create table monthlyreport (
+mreportid CHAR(24) NOT NULL,
+fromdate      DATE,
+todate        DATE,
+workCompleted VARCHAR(1024),
+remark        VARCHAR(1024),
+leaves        INT,
+attachment    VARCHAR(56),
+status        VARCHAR(20),
+scholarid     CHAR(32),
+approverid    CHAR(32),
+dateCreated   DATE,
+dateModified  DATE,
+dateApproved  DATE,
+PRIMARY KEY(mreportid),
+FOREIGN KEY (scholarid) REFERENCES scholar(scholarID),
+FOREIGN KEY (approverid) REFERENCES supervisor(supervisorID)
+);
+
+
+
+create table quarterlyreport (
+qreportid CHAR(24) NOT NULL,
+fromdate      DATE,
+todate        DATE,
+workCompleted VARCHAR(1024),
+remark        VARCHAR(1024),
+attachment    VARCHAR(56),
+status        VARCHAR(20),
+scholarid     CHAR(32),
+approverid    CHAR(32),
+dateCreated   DATE,
+dateModified  DATE,
+dateApproved  DATE,
+PRIMARY KEY(qreportid),
+FOREIGN KEY (scholarid) REFERENCES scholar(scholarID),
+FOREIGN KEY (approverid) REFERENCES supervisor(supervisorID)
+);
+
+create table scholarlogin (
+scholarID CHAR(32),
+scholarEmailID VARCHAR(128),
+credential VARCHAR(512),
+PRIMARY KEY (scholarEmailID),
+FOREIGN KEY (scholarID) REFERENCES scholar(scholarID)
+);
+
+create table supervisorlogin (
+supervisorID CHAR(32),
+supervisorEmailID VARCHAR(128),
+credential VARCHAR(512),
+PRIMARY KEY (supervisorEmailID),
+FOREIGN KEY (supervisorID) REFERENCES supervisor(supervisorID)
+);
+
+
+create table states (
+stateid INT NOT NULL AUTO_INCREMENT,
+statename    VARCHAR(255) NOT NULL,
+PRIMARY KEY (stateid)
+);
+
+create table districts (
+districtid INT NOT NULL AUTO_INCREMENT,
+districtname    VARCHAR(255) NOT NULL,
+stateid	INT NOT NULL,
+PRIMARY KEY (districtid),
+FOREIGN KEY (stateid) REFERENCES states(stateid)
+);
+
+
+create table colloquium (
+collid CHAR(12) NOT NULL,
+observername    VARCHAR(255) NOT NULL,
+scholarIDs	VARCHAR(255) NOT NULL,
+colldatetime DATETIME NOT NULL,
+createdby CHAR(32) NOT NULL,
+status	VARCHAR(10) NOT NULL,
+dateCreated	DATE,
+dateModified	DATE,
+PRIMARY KEY (collid),
+FOREIGN KEY (createdby) REFERENCES supervisor(supervisorID)
+);
+
+
+insert into supervisor ( supervisorID,supervisorFirstName,supervisorLastName,supervisorScreenName,institute,faculty,department,isadmin,role,reportto,emailID) 
+values 
+('0000000000000000','Super','Administrator','SuperAdmin',0,0,0,'Y','SUPERADMIN','0000000000000000','superadmin@scholarreport.in');
+
+
+
